@@ -325,7 +325,7 @@ public class AdminController : Controller
     //Cadastrar Moto -------------------------------
 
 
-        //Cadastrar Van -------------------------------
+    //Cadastrar Van -------------------------------
     public IActionResult CadastroVan()
     {
         return View();
@@ -448,11 +448,261 @@ public class AdminController : Controller
 
     //Cadastrar Van -------------------------------
 
+    //Cadastrar Caminhão -------------------------------
+
+    public IActionResult CadastroCaminhao()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult CadastroCaminhao(
+        [FromForm] int id, 
+        [FromForm] string marca, 
+        [FromForm] string modelo, 
+        [FromForm] string placa, 
+        [FromForm] int ano
+    )
+    {
+        if(!ModelState.IsValid){
+            return View("CadastroCaminhao");
+        }
+        if(idIsAvaible(id)){
+            string tipo = "caminhao";
+            Caminhao caminhao = new Caminhao(id, marca, modelo, placa, ano, tipo);
+            _context.Caminhoes.Add(caminhao);
+            _context.SaveChanges();
+            return RedirectToAction("CadastroCaminhao");
+        }
+        else
+        {
+            return Content("Veiculo já está cadastrado ou já foi vendido , tente outro id");
+        }
+    }
+
+    public IActionResult VendaCaminhao(int id)
+    {
+        ViewData["Caminhao"] = _context.Caminhoes.Find(id);
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult VendaCaminhao(
+        [FromForm] int id, 
+        [FromForm] string tipoVeiculo, 
+        [FromForm] string marca, 
+        [FromForm] string modelo, 
+        [FromForm] string placa, 
+        [FromForm] int ano,
+        [FromForm] string nomeCliente,
+        [FromForm] string cpfCliente
+    )
+    {
+        if(!ModelState.IsValid){
+            return View("ListaCaminhoes");
+        }
+        if(_context.Vendas.Find(id) == null){
+            Venda venda = new Venda(id, tipoVeiculo, marca, modelo, placa, ano, nomeCliente, cpfCliente);
+            _context.Vendas.Add(venda);
+            _context.Caminhoes.Remove(_context.Caminhoes.Find(id));
+            _context.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        else
+        {
+            return Content("Venda já existente, tente outro id");
+        }
+    }
+
+    public IActionResult VerCaminhao(int id)
+    {
+        Caminhao caminhao = _context.Caminhoes.Find(id);
+
+        if(caminhao == null)
+        {
+            return RedirectToAction("ListaCaminhoes");
+        }
+
+        return View(caminhao);
+    }
+
+    public IActionResult DeletarCaminhao(int id){
+        _context.Caminhoes.Remove(_context.Caminhoes.Find(id));
+        _context.SaveChanges();
+        return View("Index");
+    }
+
+    public IActionResult AtualizarCaminhao(int id){
+        Caminhao caminhao = _context.Caminhoes.Find(id);
+
+        if(caminhao == null)
+        {
+            return Content("caminhão não existente, tente outro id");
+        }
+        else
+        {
+            return View(caminhao);
+        }
+
+    }
+
+    [HttpPost]
+    public IActionResult AtualizarCaminhao(
+        [FromForm] int id, 
+        [FromForm] string marca, 
+        [FromForm] string modelo, 
+        [FromForm] string placa, 
+        [FromForm] int ano)
+    {
+        
+        if(!ModelState.IsValid){
+            return View();
+        }
+        Caminhao caminhao = _context.Caminhoes.Find(id);
+        
+        caminhao.Marca = marca;
+        caminhao.Modelo = modelo;
+        caminhao.Placa = placa;
+        caminhao.Ano = ano;
+        _context.SaveChanges();
+        return RedirectToAction("ListaCaminhoes");
+    }
+
+    public IActionResult ListaCaminhoes () => View(_context.Caminhoes);
+
+    //Cadastrar Caminhão -------------------------------
+
+    //Cadastrar Ônibus -------------------------------
+
+    public IActionResult CadastroOnibus()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult CadastroOnibus(
+        [FromForm] int id, 
+        [FromForm] string marca, 
+        [FromForm] string modelo, 
+        [FromForm] string placa, 
+        [FromForm] int ano
+    )
+    {
+        if(!ModelState.IsValid){
+            return View("CadastroOnibus");
+        }
+        if(idIsAvaible(id)){
+            string tipo = "onibus";
+            Onibus onibus = new Onibus(id, marca, modelo, placa, ano, tipo);
+            _context.Onibuss.Add(onibus);
+            _context.SaveChanges();
+            return RedirectToAction("CadastroOnibus");
+        }
+        else
+        {
+            return Content("Veiculo já está cadastrado ou já foi vendido , tente outro id");
+        }
+    }
+
+    public IActionResult VendaOnibus(int id)
+    {
+        ViewData["onibus"] = _context.Onibuss.Find(id);
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult VendaOnibus(
+        [FromForm] int id, 
+        [FromForm] string tipoVeiculo, 
+        [FromForm] string marca, 
+        [FromForm] string modelo, 
+        [FromForm] string placa, 
+        [FromForm] int ano,
+        [FromForm] string nomeCliente,
+        [FromForm] string cpfCliente
+    )
+    {
+        if(!ModelState.IsValid){
+            return View("ListaOnibuss");
+        }
+        if(_context.Vendas.Find(id) == null){
+            Venda venda = new Venda(id, tipoVeiculo, marca, modelo, placa, ano, nomeCliente, cpfCliente);
+            _context.Vendas.Add(venda);
+            _context.Onibuss.Remove(_context.Onibuss.Find(id));
+            _context.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        else
+        {
+            return Content("Venda já existente, tente outro id");
+        }
+    }
+
+    public IActionResult VerOnibus(int id)
+    {
+        Onibus onibus = _context.Onibuss.Find(id);
+
+        if(onibus == null)
+        {
+            return RedirectToAction("ListaOnibus");
+        }
+
+        return View(onibus);
+    }
+
+    public IActionResult DeletarOnibus(int id){
+        _context.Onibuss.Remove(_context.Onibuss.Find(id));
+        _context.SaveChanges();
+        return View("Index");
+    }
+
+    public IActionResult AtualizarOnibus(int id){
+        Onibus onibus = _context.Onibuss.Find(id);
+
+        if(onibus == null)
+        {
+            return Content("Ônibus não existente, tente outro id");
+        }
+        else
+        {
+            return View(onibus);
+        }
+
+    }
+
+    [HttpPost]
+    public IActionResult AtualizarOnibus(
+        [FromForm] int id, 
+        [FromForm] string marca, 
+        [FromForm] string modelo, 
+        [FromForm] string placa, 
+        [FromForm] int ano)
+    {
+        
+        if(!ModelState.IsValid){
+            return View();
+        }
+        Onibus onibus = _context.Onibuss.Find(id);
+        
+        onibus.Marca = marca;
+        onibus.Modelo = modelo;
+        onibus.Placa = placa;
+        onibus.Ano = ano;
+        _context.SaveChanges();
+        return RedirectToAction("ListaOnibuss");
+    }
+
+    public IActionResult ListaOnibuss () => View(_context.Onibuss);
+
+    //Cadastrar Ônibus -------------------------------
+
     public bool idIsAvaible(int id){
         if(
             _context.Carros.Find(id) == null &&
             _context.Vans.Find(id) == null &&
             _context.Motos.Find(id) == null &&
+            _context.Caminhoes.Find(id) == null &&
+            _context.Onibuss.Find(id) == null &&
             _context.Vendas.Find(id) == null
         ){
             return true;
@@ -463,7 +713,6 @@ public class AdminController : Controller
         }
     
     }
-
 
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

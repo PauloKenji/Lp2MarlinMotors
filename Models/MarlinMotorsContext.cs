@@ -10,6 +10,8 @@ public class MarlinMotorsContext : DbContext
     public DbSet<Venda> Vendas { get; set; }
     public DbSet<Van> Vans { get; set; }
     public DbSet<Moto> Motos { get; set; }
+    public DbSet<Caminhao> Caminhoes { get; set; }
+    public DbSet<Onibus> Onibuss { get; set; }
 
     public MarlinMotorsContext(DbContextOptions<MarlinMotorsContext> options) : base(options)
     {}

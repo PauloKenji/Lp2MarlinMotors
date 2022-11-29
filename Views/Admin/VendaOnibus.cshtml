@@ -1,0 +1,77 @@
+@model Venda
+
+@{
+    ViewData["Title"] = "Cadastrar venda de ônibus";
+
+    var onibus = ViewData["Onibus"] as Onibus;
+}
+
+
+<div class="text">
+    <h1 class="display-4">Cadastrar venda de ônibus</h1>
+    <hr>
+       
+</div>
+<div class="container">
+    <form asp-controller="Admin" asp-action="VendaOnibus" method="POST">
+        <div class="form-group">
+            <label asp-for="Id">Id</label>
+            <input type="text" asp-for="Id" class="form-control" required readonly>
+        </div>                 
+       
+        <div class="row">
+            <div class="col">
+                 <div class="form-group">
+                    <label asp-for="TipoVeiculo">Tipo de veiculo</label>
+                    <input type="text" asp-for="TipoVeiculo" class="form-control"  readonly value="onibus">
+                    <span asp-validation-for="TipoVeiculo"></span>
+                </div> 
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="Marca">Marca</label>
+                    <input type="text" asp-for="Marca" class="form-control"  readonly value="@onibus.Marca">
+                    <span asp-validation-for="Marca"></span>
+                </div> 
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="Modelo">Modelo</label>
+                    <input type="text" asp-for="Modelo" class="form-control"  readonly value="@onibus.Modelo">
+                    <span asp-validation-for="Modelo"></span>
+                </div>
+            </div>
+        </div>
+       
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="Placa">Placa</label>
+                    <input type="text" asp-for="Placa" class="form-control"  readonly value="@onibus.Placa">
+                    <span asp-validation-for="Placa"></span>
+                </div> 
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label asp-for="Ano">Ano</label>
+                    <input type="text" asp-for="Ano" class="form-control"  readonly value="@onibus.Ano">
+                    <span asp-validation-for="Ano"></span>
+                </div> 
+            </div>
+        </div>
+       
+
+        <div class="form-group">
+            <label asp-for="NomeCliente">Nome do cliente</label>
+            <input type="text" asp-for="NomeCliente" class="form-control">
+            <span asp-validation-for="NomeCliente"></span>
+        </div> 
+        <div class="form-group">
+            <label asp-for="CPFCliente">CPF do cliente</label>
+            <input type="text" asp-for="CPFCliente" class="form-control">
+            <span asp-validation-for="CPFCliente"></span>
+        </div> 
+               
+        <button type="submit" class="btn btn-primary mt-3">Finalizar Cadastro</button>
+    </form>
+</div>
