@@ -1,0 +1,23 @@
+@model MarlinMotors.Models.Van
+
+@{
+    ViewData["Title"] = $"Van {Model.Id}";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <b>Id:</b> @Model.Id
+</p>
+<p>
+    <b>Marca:</b> @Model.Marca
+</p>
+<p>
+    <b>Modelo:</b> @Model.Modelo
+</p>
+<p>
+    <b>Placa:</b> @Model.Placa
+</p>
+<p>
+    <b>Ano:</b> @Model.Ano
+</p>
+

@@ -1397,31 +1397,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kenji\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\thiag\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DotnetProjects\\MarlinMotors\\MarlinMotors\\MarlinMotors.csproj",
+      "projectUniqueName": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Lp2MarlinMotors\\MarlinMotors.csproj",
       "projectName": "MarlinMotors",
-      "projectPath": "D:\\DotnetProjects\\MarlinMotors\\MarlinMotors\\MarlinMotors.csproj",
-      "packagesPath": "C:\\Users\\kenji\\.nuget\\packages\\",
-      "outputPath": "D:\\DotnetProjects\\MarlinMotors\\MarlinMotors\\obj\\",
+      "projectPath": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Lp2MarlinMotors\\MarlinMotors.csproj",
+      "packagesPath": "C:\\Users\\thiag\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Lp2MarlinMotors\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\kenji\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\thiag\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

@@ -8,81 +8,129 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MarlinMotors
 build_property.RootNamespace = MarlinMotors
-build_property.ProjectDir = D:\DotnetProjects\MarlinMotors\MarlinMotors\
+build_property.ProjectDir = C:\Users\thiag\OneDrive\Área de Trabalho\Lp2MarlinMotors\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\DotnetProjects\MarlinMotors\MarlinMotors
+build_property.MSBuildProjectDirectory = C:\Users\thiag\OneDrive\Área de Trabalho\Lp2MarlinMotors
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/DotnetProjects/MarlinMotors/MarlinMotors/Views/Admin/AtualizarCarro.cshtml]
+[C:/Users/thiag/OneDrive/Área de Trabalho/Lp2MarlinMotors/Views/Admin/AtualizarCarro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQXR1YWxpemFyQ2Fycm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotnetProjects/MarlinMotors/MarlinMotors/Views/Admin/AtualizarVenda.cshtml]
+[C:/Users/thiag/OneDrive/Área de Trabalho/Lp2MarlinMotors/Views/Admin/AtualizarMoto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQXR1YWxpemFyTW90by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thiag/OneDrive/Área de Trabalho/Lp2MarlinMotors/Views/Admin/AtualizarVan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQXR1YWxpemFyVmFuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thiag/OneDrive/Área de Trabalho/Lp2MarlinMotors/Views/Admin/AtualizarVenda.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQXR1YWxpemFyVmVuZGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotnetProjects/MarlinMotors/MarlinMotors/Views/Admin/CadastroCarro.cshtml]
+[C:/Users/thiag/OneDrive/Área de Trabalho/Lp2MarlinMotors/Views/Admin/CadastroCarro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2FkYXN0cm9DYXJyby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotnetProjects/MarlinMotors/MarlinMotors/Views/Admin/DeletarCarro.cshtml]
+[C:/Users/thiag/OneDrive/Área de Trabalho/Lp2MarlinMotors/Views/Admin/CadastroMoto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2FkYXN0cm9Nb3RvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thiag/OneDrive/Área de Trabalho/Lp2MarlinMotors/Views/Admin/CadastroVan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2FkYXN0cm9WYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thiag/OneDrive/Área de Trabalho/Lp2MarlinMotors/Views/Admin/DeletarCarro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVsZXRhckNhcnJvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotnetProjects/MarlinMotors/MarlinMotors/Views/Admin/DeletarVenda.cshtml]
+[C:/Users/thiag/OneDrive/Área de Trabalho/Lp2MarlinMotors/Views/Admin/DeletarMoto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVsZXRhck1vdG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thiag/OneDrive/Área de Trabalho/Lp2MarlinMotors/Views/Admin/DeletarVan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVsZXRhclZhbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thiag/OneDrive/Área de Trabalho/Lp2MarlinMotors/Views/Admin/DeletarVenda.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGVsZXRhclZlbmRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotnetProjects/MarlinMotors/MarlinMotors/Views/Admin/index.cshtml]
+[C:/Users/thiag/OneDrive/Área de Trabalho/Lp2MarlinMotors/Views/Admin/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5caW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotnetProjects/MarlinMotors/MarlinMotors/Views/Admin/ListaCarros.cshtml]
+[C:/Users/thiag/OneDrive/Área de Trabalho/Lp2MarlinMotors/Views/Admin/ListaCarros.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTGlzdGFDYXJyb3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotnetProjects/MarlinMotors/MarlinMotors/Views/Admin/ListaVendas.cshtml]
+[C:/Users/thiag/OneDrive/Área de Trabalho/Lp2MarlinMotors/Views/Admin/ListaMotos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTGlzdGFNb3Rvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thiag/OneDrive/Área de Trabalho/Lp2MarlinMotors/Views/Admin/ListaVans.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTGlzdGFWYW5zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thiag/OneDrive/Área de Trabalho/Lp2MarlinMotors/Views/Admin/ListaVendas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTGlzdGFWZW5kYXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotnetProjects/MarlinMotors/MarlinMotors/Views/Admin/VendaCarro.cshtml]
+[C:/Users/thiag/OneDrive/Área de Trabalho/Lp2MarlinMotors/Views/Admin/VendaCarro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVmVuZGFDYXJyby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotnetProjects/MarlinMotors/MarlinMotors/Views/Admin/VerCarro.cshtml]
+[C:/Users/thiag/OneDrive/Área de Trabalho/Lp2MarlinMotors/Views/Admin/VendaMoto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVmVuZGFNb3RvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thiag/OneDrive/Área de Trabalho/Lp2MarlinMotors/Views/Admin/VendaVan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVmVuZGFWYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thiag/OneDrive/Área de Trabalho/Lp2MarlinMotors/Views/Admin/VerCarro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVmVyQ2Fycm8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotnetProjects/MarlinMotors/MarlinMotors/Views/Admin/VerVenda.cshtml]
+[C:/Users/thiag/OneDrive/Área de Trabalho/Lp2MarlinMotors/Views/Admin/VerMoto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVmVyTW90by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thiag/OneDrive/Área de Trabalho/Lp2MarlinMotors/Views/Admin/VerVan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVmVyVmFuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thiag/OneDrive/Área de Trabalho/Lp2MarlinMotors/Views/Admin/VerVenda.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVmVyVmVuZGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotnetProjects/MarlinMotors/MarlinMotors/Views/Home/Index.cshtml]
+[C:/Users/thiag/OneDrive/Área de Trabalho/Lp2MarlinMotors/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotnetProjects/MarlinMotors/MarlinMotors/Views/Home/Privacy.cshtml]
+[C:/Users/thiag/OneDrive/Área de Trabalho/Lp2MarlinMotors/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotnetProjects/MarlinMotors/MarlinMotors/Views/Shared/Error.cshtml]
+[C:/Users/thiag/OneDrive/Área de Trabalho/Lp2MarlinMotors/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotnetProjects/MarlinMotors/MarlinMotors/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/thiag/OneDrive/Área de Trabalho/Lp2MarlinMotors/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotnetProjects/MarlinMotors/MarlinMotors/Views/_ViewImports.cshtml]
+[C:/Users/thiag/OneDrive/Área de Trabalho/Lp2MarlinMotors/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotnetProjects/MarlinMotors/MarlinMotors/Views/_ViewStart.cshtml]
+[C:/Users/thiag/OneDrive/Área de Trabalho/Lp2MarlinMotors/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/DotnetProjects/MarlinMotors/MarlinMotors/Views/Shared/_Layout.cshtml]
+[C:/Users/thiag/OneDrive/Área de Trabalho/Lp2MarlinMotors/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-f8lxq1yteh

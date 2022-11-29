@@ -1,0 +1,60 @@
+@model IEnumerable<MarlinMotors.Models.Moto>
+
+@{
+    ViewData["Title"] = "Motos na loja";
+}
+<h1>@ViewData["Title"]</h1>
+
+
+@if(Model.Count() == 0)
+{
+    <p>Nenhuma moto cadastrado</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Placa</th>
+                <th>Ano</th>
+                <th>Vender</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var moto in Model)
+            {
+                <tr>
+                    <td>@moto.Id</td>
+                    <td>@moto.Marca</td>
+                    <td>@moto.Modelo</td>
+                    <td>@moto.Placa</td>
+                    <td>@moto.Ano</td>
+                    <td>                        
+                        <a class="btn btn-success btn-sm"
+                        asp-controller="Admin" 
+                        asp-action="VendaMoto" 
+                        asp-route-id="@moto.Id">Vender</a>
+                    </td>
+                    <td>
+                        <a class="btn btn-primary btn-sm"
+                            asp-controller="Admin" 
+                            asp-action="VerMoto" 
+                            asp-route-id="@moto.Id">Ver</a>
+                        <a class="btn btn-secondary btn-sm"
+                            asp-controller="Admin" 
+                            asp-action="AtualizarMoto" 
+                            asp-route-id="@moto.Id">Atualizar</a>
+                        <a class="btn btn-danger btn-sm"
+                            asp-controller="Admin" 
+                            asp-action="DeletarMoto" 
+                            asp-route-id="@moto.Id">Deletar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
