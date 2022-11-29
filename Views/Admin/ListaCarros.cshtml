@@ -1,0 +1,60 @@
+@model IEnumerable<MarlinMotors.Models.Carro>
+
+@{
+    ViewData["Title"] = "Carros na loja";
+}
+<h1>@ViewData["Title"]</h1>
+
+
+@if(Model.Count() == 0)
+{
+    <p>Nenhum carro cadastrado</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Placa</th>
+                <th>Ano</th>
+                <th>Vender</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var carro in Model)
+            {
+                <tr>
+                    <td>@carro.Id</td>
+                    <td>@carro.Marca</td>
+                    <td>@carro.Modelo</td>
+                    <td>@carro.Placa</td>
+                    <td>@carro.Ano</td>
+                    <td>                        
+                        <a class="btn btn-success btn-sm"
+                        asp-controller="Admin" 
+                        asp-action="VendaCarro" 
+                        asp-route-id="@carro.Id">Vender</a>
+                    </td>
+                    <td>
+                        <a class="btn btn-primary btn-sm"
+                            asp-controller="Admin" 
+                            asp-action="VerCarro" 
+                            asp-route-id="@carro.Id">Ver</a>
+                        <a class="btn btn-secondary btn-sm"
+                            asp-controller="Admin" 
+                            asp-action="AtualizarCarro" 
+                            asp-route-id="@carro.Id">Atualizar</a>
+                        <a class="btn btn-danger btn-sm"
+                            asp-controller="Admin" 
+                            asp-action="DeletarCarro" 
+                            asp-route-id="@carro.Id">Deletar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

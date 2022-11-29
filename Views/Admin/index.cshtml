@@ -1,0 +1,105 @@
+@{
+    ViewData["Title"] = "Admin";
+}
+<div class="text-center">
+    <h1 class="display-4">Bem-Vindo ao sistema</h1>
+    
+    <div class="conteinter d-flex justify-content-around m-4">
+        <div class="card " style="width: 45%;"">
+            <img src="https://prudenteseguros.com/wp-content/uploads/2012/08/handshake_1920x800.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <div class="card-text">
+                    <a class="btn btn-outline-primary btn-large m-3"
+                        asp-controller="admin" 
+                        asp-action="ListaVendas" 
+                    >Ver vendas</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <h4>Veículos</h4>
+    <div class="conteinter d-flex justify-content-around">
+        <div class="card" style="width: 19%">
+            <img src="https://media.discordapp.net/attachments/337682829225754624/1046583694380499004/Car.png?width=473&height=473" class="card-img-top" alt="...">
+            <div class="card-body">
+                <div class="card-text">
+                    <a class="btn btn-outline-primary btn-large"
+                        asp-controller="admin" 
+                        asp-action="cadastroCarro" 
+                    >Cadastrar carro</a>
+                    <a class="btn btn-outline-primary btn-large m-3"
+                        asp-controller="admin" 
+                        asp-action="ListaCarros" 
+                    >Ver restantes</a>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="width: 19%">
+            <img src="https://media.discordapp.net/attachments/337682829225754624/1046583694749606008/Moto.png?width=473&height=473" class="card-img-top" alt="...">
+            <div class="card-body">
+                <div class="card-text">
+                    <a class="btn btn-outline-primary btn-large btn-block"
+                        asp-controller="admin" 
+                        asp-action="cadastroMoto" 
+                    >Cadastrar moto</a>
+                    <a class="btn btn-outline-primary btn-large m-3"
+                        asp-controller="admin" 
+                        asp-action="ListaMotos" 
+                    >Ver restantes</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="width: 19%">
+            <img src="https://media.discordapp.net/attachments/337682829225754624/1046583695085146232/Onibus.png?width=473&height=473" class="card-img-top" alt="...">
+            <div class="card-body">
+                <div class="card-text">
+                    <a class="btn btn-outline-primary btn-large btn-block"
+                        asp-controller="admin" 
+                        asp-action="cadastroOnibus" 
+                    >Cadastrar ônibus</a>
+                    <a class="btn btn-outline-primary btn-large m-3"
+                        asp-controller="admin" 
+                        asp-action="ListaOnibuss" 
+                    >Ver restantes</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="width: 19%">
+            <img src="https://media.discordapp.net/attachments/337682829225754624/1046583693994627162/Caminhao.png?width=473&height=473" class="card-img-top" alt="...">
+            <div class="card-body">
+                <div class="card-text">
+                    <a class="btn btn-outline-primary btn-large btn-block"
+                        asp-controller="admin" 
+                        asp-action="CadastroCaminhao" 
+                    >Cadastrar caminhão</a>
+                    <a class="btn btn-outline-primary btn-large m-3"
+                        asp-controller="admin" 
+                        asp-action="ListaCaminhoes" 
+                    >Ver restantes</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="width: 19%">
+            <img src="https://media.discordapp.net/attachments/337682829225754624/1046583693361291314/Van.png?width=473&height=473" class="card-img-top" alt="...">
+            <div class="card-body">
+                <div class="card-text">
+                    <a class="btn btn-outline-primary btn-large btn-block"
+                        asp-controller="admin" 
+                        asp-action="CadastroVan" 
+                    >Cadastrar van</a>
+                    <a class="btn btn-outline-primary btn-large m-3"
+                        asp-controller="admin" 
+                        asp-action="ListaVans" 
+                    >Ver restantes</a>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>

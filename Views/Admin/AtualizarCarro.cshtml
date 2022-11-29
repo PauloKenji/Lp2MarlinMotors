@@ -1,0 +1,42 @@
+@model MarlinMotors.Models.Carro
+
+@{
+    ViewData["Title"] = "Atualizar carro";
+}
+
+<div class="text">
+    <h1 class="display-4">Atualizar carro</h1>
+    <hr>
+       
+</div>
+<div class="container">
+    <form asp-controller="Admin" asp-action="AtualizarCarro" method="POST">
+        <div class="form-group">
+            <label asp-for="Id">Id</label>
+            <input type="text" asp-for="Id" class="form-control" value="@Model.Id" readonly>
+        </div>  
+         <div class="form-group" >
+            <label asp-for="Marca">Marca</label>
+            <input type="text" asp-for="Marca" class="form-control" required>
+            <span asp-validation-for="Marca"></span>
+        </div> 
+        <div class="form-group" >
+            <label asp-for="Modelo">Modelo</label>
+            <input type="text" asp-for="Modelo" class="form-control" required>
+            <span asp-validation-for="Modelo"></span>
+        </div> 
+        <div class="form-group" >
+            <label asp-for="Placa">Placa</label>
+            <input type="text" asp-for="Placa" class="form-control" required>
+            <span asp-validation-for="Placa"></span>
+        </div> 
+        <div class="form-group" >
+            <label asp-for="Ano">Ano</label>
+            <input type="text" asp-for="Ano" class="form-control" required>
+        </div> 
+        
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</div>
+    
+
